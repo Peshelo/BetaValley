@@ -1,6 +1,6 @@
 
 <template>
-  <div class="w-screen bg-black px-4 text-white">
+  <div class="w-screen sticky top-0 z-10 bg-black px-4 text-white">
     <div
       class="max-w-[1400px] mx-auto flex flex-row items-center justify-between gap-x-4"
     >
@@ -30,7 +30,7 @@
     </div>
     <div v-if="showMenu" class="fixed bg-black w-full left-0 z-10 flex flex-col md:hidden">
             <NuxtLink to="/" class="nav">PRODUCTS</NuxtLink>
-        <NuxtLink to="/trending/" class="nav">TRENDING</NuxtLink>
+        <NuxtLink to="/trending" class="nav">TRENDING</NuxtLink>
         <NuxtLink to="/topUsers/" class="nav">COMMUNITY</NuxtLink>
         <NuxtLink to="/about/" class="nav">ABOUT US</NuxtLink>
         </div>
@@ -40,3 +40,12 @@
 <script setup>
 let showMenu = ref(false);
 </script>
+
+<style>
+.sticka{
+    position: --websticky--;
+    position: sticky;
+    top:0;
+    z-index:20px
+}
+</style>

@@ -3,7 +3,10 @@
         <div>
             <TopNav/>
             
-            <slot/>
+           
+                 <slot/>
+           
+           <Footer class="mt-10"/>
         </div>
     </div>
 </template>

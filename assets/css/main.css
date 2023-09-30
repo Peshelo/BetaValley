@@ -12,3 +12,15 @@ body{
 .router-link-active{
     @apply border-orange-400 text-orange-400 font-extrabold
 }
+.group li{
+    @apply duration-100
+}
+.group li:hover{
+    @apply border-l-4 border-orange-300 px-2
+}
+.container{
+    @apply bg-white p-4 rounded-md border border-gray-200
+}
+.page{
+    @apply max-w-[1400px] mx-auto
+}
