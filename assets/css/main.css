@@ -1,0 +1,14 @@
+body{
+    font-family: DM Sans;
+    @apply bg-gray-100
+}
+
+.nav{
+    @apply border-b-[3px] px-5 font-bold text-center py-5 border-transparent duration-300
+}
+.nav:hover{
+    @apply border-white
+}
+.router-link-active{
+    @apply border-orange-400 text-orange-400 font-extrabold
+}
